@@ -30,6 +30,7 @@ public class ID18FourSum{
 					if (nums[i] + nums[j] > target && nums[i] + nums[j] >=0) {
 						break;
 					}
+					// 这里一定要检查j大于的i+1，不是0
 					if (j > i + 1 && nums[j] == nums[j - 1]) {
 						continue;
 					}
